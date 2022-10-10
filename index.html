@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Encuesta de productos de helados</h1>
+        <p id="description">Nos encontramos en la elaboracion de helados para consumo masivo, con productos orgánicos amigables al medio ambiente. Le agradecemos por su tiempo.</p>
+        <div>
+            <form id="survey-form">
+                <div class="nombre">
+                    <label for="name" id="name-label">Nombre</label>
+                    <input type="text" name="name" id="name" required placeholder="Ingresa Tu Nombre">
+                </div>
+
+                <div class="nombre">   
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Ingresa Tu Email">
+                </div>
+
+                <div class="nombre">
+                    <label for="edad" id="number-label">Edad</label>
+                    <input type="number" name="edad" id="number" required min="12" max="60" placeholder="Ingresa Tu Edad">
+                </div>
+
+                
+                <p>Género</p>
+                <div class="genero">
+                    <label for="generof" id="g-label"><input type="radio" name="genero" id="generof" required value="femenino">Femenino</label>
+                    <label for="generom" id="g-label"><input type="radio" name="genero" id="generom" required value="masculino">Masculino</label>
+                    <label for="generoo" id="g-label"><input type="radio" name="genero" id="generoo" required value="otro">Otro</label>
+                </div>
+               
+                <p>Le gusta los helados artesanales?</p>
+                <div class="genero">
+                    <label for="si" id="g-label"><input type="radio" name="sino" id="si" required value="si">Si</label>
+                    <label for="no" id="g-label"><input type="radio" name="sino" id="no" required value="no">No</label>
+                </div>
+                
+                <div>
+                    <p>Con qué frecuencia compra helado?</p>
+                    <select name="" id="dropdown" required>
+                        <option value="opcion1" disabled selected>Seleccione opción</option>
+                        <option value="opcion2">Todos los días</option>
+                        <option value="opcion3">Una vez a la semana</option>
+                        <option value="opcion4">Los fines de semana</option>
+                        <option value="opcion5">Quincenal</option>
+                        <option value="opcion6">Una vez al mes</option>
+                    </select>
+                </div>
+                
+
+                <p>Tipos de helados que le gusta?</p>
+                <div class="genero">
+                    <label for="helado1" id="g-label"><input type="checkbox" id="helado1" name="helado1" value="paleta">Paleta de helado</label>
+                    <label for="vehicle2" id="g-label"><input type="checkbox" id="helado2" name="helado2" value="cono">Cono con helado</label>
+                    <label for="helado3" id="g-label"><input type="checkbox" id="helado3" name="helado3" value="vaso">Vaso con helado</label>
+                    <label for="helado4" id="g-label"><input type="checkbox" id="helado4" name="helado4" value="kilo">1 kilogramo de helado</label>
+                    <label for="helado5" id="g-label"><input type="checkbox" id="helado5" name="helado5" value="frutas">Helados con frutas</label>
+                </div>
+                
+                <p>Comentario adicional</p>
+                <textarea name="comentario" id="comentario" placeholder="Ingrese su comentario"></textarea>
+                <div>
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+                   
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2022</p>
+    </footer>
+    
+</body>
+</html>
